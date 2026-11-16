@@ -1,14 +1,22 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-AU">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Local Cafe - About</title>
+
+    <meta
+      name="description"
+      content="Discover Local Cafe in Moorabbin, with specialty coffee, free Wi-Fi, a cosy atmosphere, opening hours and location information."
+    />
+
+    <title>About | Local Cafe</title>
+
     <link rel="stylesheet" href="./css/style.css" />
   </head>
+
   <body>
     <header>
-      <div class="container hdx-flex">
+      <div class="site-container hdx-flex">
         <h2>
           <a href="index.html" class="logo">Local Cafe</a>
         </h2>
@@ -16,28 +24,99 @@
         <nav>
           <ul class="nx-flex">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" class="current">About</a></li>
+            <li>
+              <a href="about.html" class="current"> About </a>
+            </li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <main>
-      <section id="about">
-        <h2>Why Visit Us</h2>
-      </section>
-      <section id="working-hours">
-        <h2>Opening Hours</h2>
-        <p>Monday - Thursday 6.00 am - 4.00 pm</p>
-        <p>Friday - Sunday 6.00 am - 7.00 pm</p>
-      </section>
-      <section id="location-map">
-        <h2>Find Us Here</h2>
-        <img src="./images/location-map.png" alt="" />
-      </section>
+
+    <main class="about-page">
+      <div class="site-container">
+        <!-- Why visit us -->
+        <section class="about-section">
+          <h1 id="about-heading" class="about-section-title">Why visit us?</h1>
+
+          <div class="card-grid">
+            <div class="card">
+              <img src="./images/coffee.webp" alt="Freshly prepared coffee with latte art" />
+              <h3>Specialty Coffee</h3>
+              <p>Locally roasted beans, made by experienced baristas.</p>
+            </div>
+
+            <div class="card">
+              <img src="./images/free-wifi.webp" alt="Laptop and coffee on a cafe table" />
+              <h3>Free Internet</h3>
+              <p>Stay connected with free Wi-Fi throughout your visit.</p>
+            </div>
+
+            <div class="card">
+              <img
+                src="./images/cosy-atmosphere.webp"
+                alt="Cosy café seating with wooden tables and leafy plants"
+              />
+              <h3>Cosy Space</h3>
+              <p>A warm, relaxed spot to catch up, study or work.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Opening hours and location -->
+        <section class="about-section">
+          <h2 id="visit-heading" class="about-section-title">Plan your visit</h2>
+
+          <div class="about-visit-stack">
+            <section class="about-panel about-hours-panel">
+              <h3 id="hours-heading">Opening Hours</h3>
+
+              <table class="about-hours-table">
+                <tbody>
+                  <tr>
+                    <th scope="row">Monday - Thursday</th>
+                    <td>9.00 am - 5.00 pm</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">Friday - Sunday</th>
+                    <td>9.00 am - 7.00 pm</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p class="about-welcome">We look forward to welcoming you.</p>
+            </section>
+
+            <section class="about-panel about-location-panel">
+              <h3 id="location-heading">Find Us</h3>
+              <p>Moorabbin, Victoria</p>
+
+              <img
+                class="about-map"
+                src="./images/location-map.png"
+                alt="Map showing the cafe location in Moorabbin"
+              />
+
+              <a class="btn" href="#"> Get directions </a>
+            </section>
+          </div>
+        </section>
+
+        <!-- Classmate's cafe link -->
+        <section class="about-community">
+          <h2 id="community-heading">Explore our local community</h2>
+
+          <p>
+            Discover another cafe in the area:
+            <a href="https://zoubim.github.io/WebDev/index.html">Arama Cafe</a>.
+          </p>
+        </section>
+      </div>
     </main>
+
     <footer class="text-center">
-      <p>Local Cafe &copy; 2026. All Rights Reserved</p>
+      <p>Local Cafe &copy; 2026. All Rights Reserved.</p>
     </footer>
   </body>
 </html>
