@@ -410,6 +410,6 @@ main h3 {
 
   .card-grid {
     grid-template-columns: 1fr;
-    padding: 40px;
+    max-width: 400px;
   }
 }
