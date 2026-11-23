@@ -89,10 +89,6 @@ header ul li a {
   flex-direction: row;
 }
 
-.text-center {
-  text-align: center;
-}
-
 .hdx-flex {
   display: flex;
   flex-direction: row;
